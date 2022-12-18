@@ -1,0 +1,208 @@
+.i {
+  display: flex;
+  height: 100vh;
+}
+
+.i-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.i-right {
+  flex: 1;
+  position: relative;
+}
+
+.i-left-wrapper {
+  padding: 50px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.i-intro {
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.i-name {
+  font-size: 80px;
+}
+
+.i-title {
+  height: 50px;
+  overflow: hidden;
+}
+
+.i-title-wrapper {
+  height: 100%;
+  animation: move 10s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+  33% {
+    transform: translateY(-50px);
+  }
+  66% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(-150px);
+  }
+}
+
+.i-title-item {
+  height: 50px;
+  font-size: 50px;
+  font-weight: bold;
+  color: #59b256;
+  display: flex;
+  align-items: center;
+}
+
+.i-desc{
+  font-size: 1.6rem;
+}
+
+.i-scroll {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 20px;
+}
+
+.i-img {
+  margin-top: 7vh;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  cursor: pointer;
+}
+
+.i-bg {
+  clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  background-color: #59b256;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.buttons{
+  display: flex;
+  
+}
+
+.buttons a{
+  font-size: 1.2rem;
+  display: flex;
+  color: white;
+  text-decoration: none;
+  margin: auto 5px;
+  transition: ease 0.2s;
+  background-color: #59b256;
+  border-radius: 2px;
+  padding: 10px 15px;
+}
+
+.buttons a:hover{
+  background-color: #8956b2;
+}
+
+.maincontainer{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.thecard{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+
+.maincontainer:hover .thecard{
+  transform: rotateY(180deg);
+}
+
+
+.thefront{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  color: #333;
+}
+
+.theback{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 480px) {
+  .i {
+    flex-direction: column;
+  }
+
+  .buttons a{
+    margin: 10px 5px;
+  }
+
+  .i-left-wrapper {
+  
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+  }
+  .i-img {
+    bottom: 14vh;
+  }
+  
+}
+
+@media screen and (max-width: 1280px) {
+  .i-img {
+    margin-top: 20vh;
+    width: 100%;
+    object-fit: contain;
+    position: absolute;
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  .maincontainer{
+    top: 15vh;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .i-desc{
+    font-size: 30px;
+  }
+}
+
+
+@media screen and (max-width: 420px) {
+  .i-title-item {
+    font-size: 30px;
+  }
+  .i-desc{
+    display: none;
+  }
+  .i-img {
+    bottom: 15vh;
+  }
+}
