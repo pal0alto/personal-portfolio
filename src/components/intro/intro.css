@@ -33,7 +33,7 @@
 }
 
 .i-title {
-  height: 50px;
+  height: 60px;
   overflow: hidden;
 }
 
@@ -44,18 +44,18 @@
 
 @keyframes move {
   33% {
-    transform: translateY(-50px);
+    transform: translateY(-60px);
   }
   66% {
-    transform: translateY(-100px);
+    transform: translateY(-120px);
   }
   100% {
-    transform: translateY(-150px);
+    transform: translateY(-180px);
   }
 }
 
 .i-title-item {
-  height: 50px;
+  height: 60px;
   font-size: 50px;
   font-weight: bold;
   color: #59b256;
