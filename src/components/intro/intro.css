@@ -24,12 +24,12 @@
 }
 
 .i-intro {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 300;
 }
 
 .i-name {
-  font-size: 80px;
+  font-size: 65px;
 }
 
 .i-title {
@@ -64,7 +64,7 @@
 }
 
 .i-desc{
-  font-size: 1.6rem;
+  font-size: 1.34rem;
 }
 
 .i-scroll {
