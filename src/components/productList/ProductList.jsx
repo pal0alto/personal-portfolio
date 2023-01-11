@@ -15,18 +15,21 @@ After a few months of intense study, I was able to put together this portfolio w
         <p className="pl-desc">
 Today, I still keep studying to learn more about different JavaScript libraries and back-end technologies like NextJS and NodeJS to become a full-stack developer. 
         </p>
-        <p className="pl-sub-a">
-          Feel free to ask anything about the projects.
-        </p>
-        <p className="pl-sub-b">
-          Here is a fun fact: I actually did the photo shoot of the items that are available in the Orihandicraftal E-commerce website.
-        </p>
+        
       </div>
       <div className="pl-list">
         {products.map((item) => (
           <Product key={item.id} img={item.img} link={item.link} title={item.title} />
         ))}
       </div>
+        <div className="pl-texts">
+        <p className="pl-sub-a">
+          Feel free to ask anything about the projects.
+        </p>
+        <p className="pl-sub-b">
+          Here is a fun fact: I actually did the photo shoot of the items that are available in the Orihandicraftal E-commerce website.
+        </p>
+        </div>
     </div>
   );
 };
